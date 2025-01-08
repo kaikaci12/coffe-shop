@@ -17,8 +17,8 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor:
             colorScheme === "dark"
-              ? Colors.darkBackground
-              : Colors.lightBackground,
+              ? Colors.primaryGreyHex
+              : Colors.primaryWhiteHex,
           borderTopWidth: 0,
           elevation: 5, // Shadow for better visibility
         },
@@ -34,6 +34,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
+
           tabBarIcon: ({ focused }) => (
             <CustomIcon
               name="home" // Use the correct icon name from your icon set
