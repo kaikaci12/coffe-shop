@@ -1,79 +1,68 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<div align="center"><img src="https://i.imgur.com/tfXskRz.png" alt="drawing" width="100"/><hr></div>
 
-# Getting Started
+The **ACME Coffee Shop is a fictituous store which sells coffee, beverages, ice cream, cookies and many other products**.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Clients use an Android Application to place orders and perform payment. Later they go to the counter of the store and present a generated QR Code to pick up their order.
+Coffe shop employees use a different application to scan and complete clients order.
 
-## Step 1: Start the Metro Server
+This project was developed as a course assignment of the [Mobile Computing](https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459516) at [Faculdade de Engenharia da Universidade do Porto](https://sigarra.up.pt/feup/en).
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+_Project finished on November 2020._
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---
 
-```bash
-# using npm
-npm start
+## Project Architecture
 
-# OR using Yarn
-yarn start
-```
+The project is composed by two Android applications and an Express.js Web Server. See [Architecture](https://i.imgur.com/RPOlSkC.png).
 
-## Step 2: Start your Application
+## Android Applications
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+<table>
+ <tbody>
+  <tr>
+   <td>
+<img src="https://i.imgur.com/aoIJrH5.png" alt="Login" width="150"/>
+   </td>
+   <td>
+<img src="https://i.imgur.com/Pf8l6A6.png" alt="Store" width="150"/>
+   </td>
+   <td>
+<img src="https://i.imgur.com/5BmRfVs.png" alt="Checkout" width="150"/>
+   </td>
+   <td>
+<img src="https://i.imgur.com/M46yVEi.png" alt="Pending Order" width="150"/>
+   </td>
+  </tr>
+ </tbody>
+</table>
 
-### For Android
+The Android apps were built with **Kotlin** using the **Android Jetpack** libraries.
 
-```bash
-# using npm
-npm run android
+#### Clients application features:
 
-# OR using Yarn
-yarn android
-```
+- [Login](https://i.imgur.com/UIXYvS4.gif)
+- [Register](https://i.imgur.com/mcTvtmC.gif)
+- [Edit profile](https://i.imgur.com/33jbKcC.gif)
+- [Make order](https://i.imgur.com/zj17Pkf.gif)
+- [Pickup order](https://i.imgur.com/afuckCi.gif)
+- [List Vouchers](https://i.imgur.com/VKzmR96.gif)
+- [Add Vouchers to cart or update product's quantity](https://i.imgur.com/BuSsyF1.gif)
+- [List archived and pending orders](https://i.imgur.com/g91KKYh.gif)
+- [Remake order](https://i.imgur.com/w9MQuWf.gif)
+- [Cancel order](https://i.imgur.com/Bba7I0Q.gif)
+- [List archived and pending orders](https://i.imgur.com/g91KKYh.gif)
 
-### For iOS
+#### Coffe shop employees application features:
 
-```bash
-# using npm
-npm run ios
+- [Scan order](https://i.imgur.com/fHyOSDl.gif)
+- [List previous orders](https://i.imgur.com/4up3i5C.gif)
 
-# OR using Yarn
-yarn ios
-```
+## Web Server
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+The Web Server uses Node.js and relies on Express.js. See [main branch](https://github.com/Erroler/Coffee-Shop-App/tree/main).
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Developed by
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Fábio Oliveira (up201604796@fe.up.pt)
+- Francisco Almeida (up201909574@fe.up.pt)
+- Ricardo Moura (up201604912@fe.up.pt) 🠈 Me
